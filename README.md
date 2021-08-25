@@ -1,4 +1,39 @@
-# Karaoke Forever
+# ABOUT THIS FORK
+
+You're looking at gazugafan's fork of Karaoke Forever, which includes the following new features...
+
+* YouTube search with automatic vocal removal and accurate word-level lyrics alignment
+* Options to NOT require username and/or password when creating new accounts
+
+## Getting started with the fork
+
+At a minimum, you'll need [Node.js](https://nodejs.org/en/) 12 or later and [FFMPEG](https://www.ffmpeg.org) installed. That's enough to download pre-made karaoke mixes from YouTube. Automatic karaoke mix generation requires a bit more technical setup.
+
+This fork doesn't have any "release" on github. There's no single executable to download. Instead, you'll need to get the entire codebase. You can do that by clicking the "Code" button in the upper-right of github (probably on this page).
+
+From there, ideally you would copy the git URL and use `git` to clone the repo. That would let you easily pull in changes I might make later on and makes updating a snap! Alternatively, you could just download the whole thing as a ZIP file and extract it.
+
+Once you have the code, open a command prompt and change to the folder the code is in. Install all the JS dependencies by running `npm install`, then build the whole thing by running `npm run build`. Finally, actually run the thing with `node server/main.js` and optionally specify the port you want to it to run on with `-p 3000` tacked onto the end (where 3000 is the port you want).
+
+Congrats! My fork of Karaoke Forever should now be running. You should be able to navigate to the IP/host and port in a web browser and use Karaoke Forever like normal.
+
+## Enabling YouTube Search
+
+With my fork running, login with your admin account, switch to the Account tab, and check the box under the YouTube preferences. You'll need FFMPEG installed. See https://github.com/gazugafan/karaoke-forever/blob/main/docs/content/docs/index.md#youtube-setup for more details.
+
+## Automatic vocals removal and lyric alignment
+
+This requires more technical ability than the rest of the setup. If you don't have server admin experience, you might consider skipping this or seeking help.
+
+Note that you'll need a decently powerful computer, with at least 16GB of storage space and 15GB of free RAM to work with. A Linux OS will work best, but you might be able to use WSL2 in Windows.
+
+See https://github.com/gazugafan/karaoke-forever/blob/main/docs/content/docs/index.md#automatic-vocals-removal-and-lyric-alignment
+
+## Optional username and password
+
+Login with your admin account, switch to the Account tab, and look for the options under the New Accounts preferences. If you uncheck both options, new users will be able to create an account using just a name, and can log back in later using the same name and no password. Administrator accounts always require a password, however.
+
+# Karaoke Forever (Original README)
 
 Host awesome karaoke parties where everyone can easily find and queue songs from their phone's web browser. Use your own database of karaoke songs, or enable YouTube search with automatic vocal removal and lyrics alignment. The player is also browser-based with support for MP3+G, MP4 video and WebGL visualizations. The server is self-hosted with no internet connection required (unless YouTube search is enabled).
 
