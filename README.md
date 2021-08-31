@@ -4,6 +4,7 @@ You're looking at gazugafan's fork of Karaoke Forever, which includes the follow
 
 * YouTube search with automatic vocal removal and accurate word-level lyrics alignment
 * Options to NOT require username and/or password when creating new accounts
+* Case INsensitive usernames
 
 ## Getting started with the fork
 
