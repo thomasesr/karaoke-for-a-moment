@@ -6,6 +6,8 @@ You're looking at gazugafan's fork of Karaoke Forever, which includes the follow
 * Options to NOT require username and/or password when creating new accounts
 * Case INsensitive usernames
 
+[Check out this demo to see it in action](https://www.youtube.com/watch?v=zWa8k6degVs)
+
 ## Getting started with the fork
 
 At a minimum, you'll need [Node.js](https://nodejs.org/en/) 12 or later and [FFMPEG](https://www.ffmpeg.org) installed. That's enough to download pre-made karaoke mixes from YouTube. Automatic karaoke mix generation requires a bit more technical setup.
