@@ -1,6 +1,6 @@
 const fs = require('fs')
 const rimraf = require('rimraf')
-const ytdl = require('ytdl-core')
+const ytdl = require("@distube/ytdl-core")
 const axios = require('axios')
 const FormData = require('form-data')
 const db = require('../../lib/Database').db
