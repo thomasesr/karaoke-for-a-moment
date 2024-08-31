@@ -10,6 +10,11 @@ const env = {
 
 const yargs = require('yargs')
   .version(false) // disable default handler
+  .option('data', {
+    describe: 'Absolute path for database file(s)',
+    requiresArg: true,
+    type: 'string',
+  })
   .option('p', {
     alias: 'port',
     describe: 'Web server port (default=auto)',
@@ -75,6 +80,7 @@ if (argv.scan) {
 
 // settings via CLI take precendence over env vars
 const opts = {
+  data: 'KF_SERVER_PATH_DATA',
   port: 'KF_SERVER_PORT',
   urlPath: 'KF_SERVER_URL_PATH',
   scannerConsoleLevel: 'KF_SCANNER_CONSOLE_LEVEL',
