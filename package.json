@@ -80,7 +80,7 @@
     "vm2": "^3.9.3",
     "yargs": "^17.0.1",
     "@distube/ytdl-core": "^4.14.4",
-    "ytsr": "^3.5.0"
+    "ytsr": "^3.8.4"
   },
   "devDependencies": {
     "@babel/core": "^7.14.5",
